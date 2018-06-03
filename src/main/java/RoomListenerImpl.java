@@ -1,5 +1,4 @@
 import clients.SymBotClient;
-import listeners.RoomListener;
 import model.InboundMessage;
 import model.OutboundMessage;
 import model.Stream;
@@ -7,15 +6,15 @@ import model.events.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class RoomListenerTestImpl implements RoomListener {
+public class RoomListenerImpl implements listeners.RoomListener {
 
     private SymBotClient botClient;
 
-    public RoomListenerTestImpl(SymBotClient botClient) {
+    public RoomListenerImpl(SymBotClient botClient) {
         this.botClient = botClient;
     }
 
-    private final Logger logger = LoggerFactory.getLogger(RoomListenerTestImpl.class);
+    private final Logger logger = LoggerFactory.getLogger(RoomListenerImpl.class);
 
     public void onRoomMessage(InboundMessage inboundMessage) {
         OutboundMessage messageOut = new OutboundMessage();

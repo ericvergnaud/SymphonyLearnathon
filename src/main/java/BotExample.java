@@ -27,11 +27,14 @@ public class BotExample {
 
 
         SymBotClient botClient = SymBotClient.initBot(config, botAuth);
-        DatafeedEventsService datafeedEventsService = botClient.getDatafeedEventsService();
-        RoomListener roomListenerTest = new RoomListenerTestImpl(botClient);
-        datafeedEventsService.addRoomListener(roomListenerTest);
+
+        RoomListener roomListenerTest = new RoomListenerImpl(botClient);
         IMListener imListener = new IMListenerImpl(botClient);
+
+        DatafeedEventsService datafeedEventsService = botClient.getDatafeedEventsService();
+        datafeedEventsService.addRoomListener(roomListenerTest);
         datafeedEventsService.addIMListener(imListener);
+
         createRoom(botClient);
     }
 

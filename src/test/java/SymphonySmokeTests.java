@@ -7,7 +7,9 @@ import model.Room;
 import model.RoomInfo;
 import model.UserInfo;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
+import services.DatafeedEventsService;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.net.URL;
@@ -61,8 +63,21 @@ public class SymphonySmokeTests {
         botClient.getStreamsClient().addMemberToRoom(roomInfo.getRoomSystemInfo().getId(), userInfo.getId());
     }
 
+    @Ignore
     @Test
-    public void can_listen_to_messages_in_room() throws Exception {
+    public void can_listen_to_rooms_being_created() throws Exception {
+        DatafeedEventsService datafeedEventsService = botClient.getDatafeedEventsService();
+        TestRoomListener roomListener = new TestRoomListener();
+        datafeedEventsService.addRoomListener(roomListener);
+
+        assertEquals(roomListener.roomCreated, false);
+        createRoom();
+        assertEquals(roomListener.roomCreated, true);
+    }
+
+    @Ignore
+    @Test
+    public void can_listen_to_messages() throws Exception {
         throw new NotImplementedException();
     }
 
