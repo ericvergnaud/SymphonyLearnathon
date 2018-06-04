@@ -38,9 +38,9 @@ The pod version with Symphony 1.51 (being deployed in prod this coming weekend f
 
 ## API calls
 
-https://develop2-api.symphony.com:8444/sessionauth/v1/authenticate
-https://develop2-api.symphony.com:8444/keyauth/v1/authenticate
-https://develop2.symphony.com/
+- https://develop2-api.symphony.com:8444/sessionauth/v1/authenticate
+- https://develop2-api.symphony.com:8444/keyauth/v1/authenticate
+- https://develop2.symphony.com/
 
 You have access to all APIs (REST, Extension, Integration, Embedded) 
 
@@ -63,23 +63,22 @@ The certificates password is: changeit
 For those who would like to ask live questions, we will be holding 2 more webinars: Wed 23rd May 9:30am HK/SG 10:30am Tokyo and 30th of May 10:00 HK/SG. Please register here: https://go.symphony.com/mandatory-symphony-innovate-asia-hackathon-webinar-1
 
 ## API doc
-
-https://developer-docs.symphony.com/
+- https://developer-docs.symphony.com/
 
 ### Yaml 
-https://github.com/symphonyoss/symphony-api-spec/tree/rc-current-r51
+- https://github.com/symphonyoss/symphony-api-spec/tree/rc-current-r51
 
 ### Github repos
-https://github.com/symphonyoss (python client and examples here)
-https://github.com/symphonysa
-https://github.com/symphonyplatformsolutions
+- https://github.com/symphonyoss (python client and examples here)
+- https://github.com/symphonysa
+- https://github.com/symphonyplatformsolutions
 
 ### SY clients (C#, Java, Node.js) and bot generator, how to start guide etc.
-https://symphony-developers.symphony.com/docs
+- https://symphony-developers.symphony.com/docs
 
 ### How to test your MessageML and see it rendered in PresentationML or markdown (Mobile) without coding
 examples of complex formatting
-http://renderer-tool.app.symphony.com/
+- http://renderer-tool.app.symphony.com/
 
 ### Some ideas/examples you may have seen, with demo and link to the repo
-https://workflow.symphony.com/#/
+- https://workflow.symphony.com/#/
