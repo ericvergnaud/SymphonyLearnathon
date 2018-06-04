@@ -3,6 +3,7 @@
 - Actors: user, requester, bot
 - Terms: approval, task
 
+### User
 1. As a user I should be able to query the bot for all open (and completed) tasks so that I know what I have to do
 1. As a user I should receive a message when I have a task to do so that I know I have to action a task
 1. As a user I should be able to approve or reject a task so that the process may continue
@@ -15,6 +16,7 @@
 1. As a user I should receive a reminder when an audio call is requested so I do not miss the call  (optional: download outlook invite with symphony:// link)
 1. As a user I should receive a reminder when a task is almost due or overdue so I don't miss completing a task
 
+### Requester
 1. As a requester I should be able to initiate an approval so that participants may be notified that they have tasks to do
 1. As a requester I should be able to specify metadata for the approval (title, description, requestors, approvers, due time) so that approvers may receive the information they need to be able to take action (optional: edit metadata)
 1. As a requester I should be able to specify a time (in the future or now) for an audio call so participants may be reminded that a call is in progress
