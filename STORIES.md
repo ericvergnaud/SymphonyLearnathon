@@ -12,6 +12,7 @@
 1. As a user I should be able to ask for help from the bot so I know all commands that are available (e.g. help, detail, group, requestors, approvers, external URL)
 1. As a user I should be able to chat with other individual participants on the task so I can ask questions
 1. As a user I should be able to chat with all participants on the task so I can have a discussion about the task with the group
+1. As a user I should be able to invite participants to join the task chat
 1. As a user I should be able to join an audio bridge for a task so I can participate in a conversation about the task
 1. As a user I should receive a reminder when an audio call is requested so I do not miss the call  (optional: download outlook invite with symphony:// link)
 1. As a user I should receive a reminder when a task is almost due or overdue so I don't miss completing a task
